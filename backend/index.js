@@ -2,6 +2,7 @@
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/.env" });
 }
+
 const cloudinary = require("cloudinary");
 const expressFileUpload = require("express-fileupload");
 const express = require("express");
@@ -23,7 +24,7 @@ app.use(cookieParser());
 
 //Database Connect
 connectDB();
-
+console.log(process.env.CLOUD_API_KEY);
 //JSON
 app.use(express.json());
 
@@ -32,10 +33,16 @@ app.use(expressFileUpload());
 
 //Config Cloudniary
 cloudinary.config({
-  cloud_name: process.env.CLOUD_NAME,
-  api_key: process.env.CLOUD_API_KEY,
-  api_secret: process.env.CLOUD_API_SECRET_KEY,
+  cloud_name: "dzkexyp4x",
+  api_key: "277621367132598",
+  api_secret: "qWZksD_8nYXzMiywrPDLSRP9gS8",
 });
+
+// cloudinary.config({
+//   cloud_name: process.env.CLOUD_NAME,
+//   api_key: process.env.CLOUD_API_KEY,
+//   api_secret: process.env.CLOUD_API_SECRET_KEY,
+// });
 
 app.listen(process.env.PORT, "localHost", () => {
   console.log(`Server Running At http://localhost:${process.env.PORT}`);
