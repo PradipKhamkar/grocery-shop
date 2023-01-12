@@ -1,0 +1,150 @@
+.add-product-form-box {
+  background-color: rgba(243, 243, 243, 0.222);
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10rem;
+}
+
+.add-product-form-box form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.add-product-form-box form div input[type="text"],
+[type="number"],
+[type="file"] {
+  margin-bottom: 2rem;
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.836);
+  color: var(--black);
+}
+
+.add-product-form-box form div input::file-selector-button {
+  background: none;
+  width: 102%;
+  border: none;
+  cursor: pointer;
+}
+.add-product-form-box form span {
+  padding: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--bs-warning);
+  font-size: 1.7rem;
+}
+
+.add-product-form-box form .product-weight {
+  font-size: 1.7rem;
+  width: 40.5%;
+  margin: auto;
+  margin-bottom: 2.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.add-product-form-box form .weight-check {
+  display: flex;
+  align-items: center;
+}
+.add-product-form-box form .weight-check label {
+  margin-top: 0.6rem;
+  width: 6.7rem;
+  color: black;
+}
+
+.add-product-form-box form div input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2.1rem;
+  width: 2.1rem;
+  background-color: var(--bs-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+}
+.add-product-form-box form div input[type="checkbox"]::after {
+  content: "✔️";
+  color: var(--bs-dark);
+  display: none;
+}
+.add-product-form-box form div input[type="checkbox"]:hover {
+  background-color: var(--bs-danger);
+}
+
+.add-product-form-box form div input[type="checkbox"]:checked {
+  background-color: var(--bs-success);
+}
+
+.add-product-form-box form div input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+.product-preview {
+  margin-bottom: -2rem;
+}
+.product-preview img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.product-category select {
+  padding: 1rem;
+}
+.upload-error {
+  background-color: brown;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  width: 50%;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.add-product-form-btn button {
+  background-color: var(--green);
+  font-size: 2rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  .add-product-form-box {
+    width: 100%;
+    background-color: var(--bs-dark);
+  }
+  .add-product-form-box form div input[type="text"],
+  [type="number"],
+  [type="file"] {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  .add-product-form-box form .product-weight {
+    width: 64%;
+  }
+  .products-table {
+    width: 99%;
+  }
+}

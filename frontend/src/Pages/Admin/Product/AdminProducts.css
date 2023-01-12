@@ -1,0 +1,31 @@
+.admin-products-actions {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 50%;
+  padding-bottom: 4rem;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
+}
+
+.admin-products-actions li {
+  list-style: none;
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+.admin-products-actions li:hover {
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  .admin-products-actions {
+    width: 100%;
+  }
+}

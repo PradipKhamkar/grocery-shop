@@ -1,0 +1,68 @@
+.sidebar-container {
+  background-color: var(--bs-white);
+  width: 30rem;
+  height: 100vh;
+  position: fixed;
+  margin-top: 2rem;
+}
+
+.sidebar-container ul {
+  margin-top: 8rem;
+}
+
+.sidebar-container ul li {
+  color: var(--black);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  margin-top: 5rem;
+  display: flex;
+  place-items: center;
+  cursor: pointer;
+}
+
+.sidebar-container ul li i {
+  line-height: 1rem;
+  font-size: 2.1rem;
+  margin-right: 0.5rem;
+}
+.sub-products-section {
+  background-color: brown;
+  position: absolute;
+  color: var(--black);
+  padding: 0rem;
+  margin-bottom: 0rem;
+  font-size: 2.1rem;
+  display: block;
+  cursor: pointer;
+}
+.sub-products-section li {
+  color: var(--black);
+  padding: 0rem;
+  margin-bottom: 0rem;
+  font-size: 2.1rem;
+  margin-top: 0rem;
+  display: block;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  .sidebar-container {
+    width: 99%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 8.9rem;
+  }
+  .sidebar-container ul {
+    margin-top: 0rem;
+  }
+}

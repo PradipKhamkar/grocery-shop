@@ -1,0 +1,144 @@
+.checkout-container {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+}
+
+.checkout-box {
+  padding: 3rem;
+  width: 100%;
+  margin: auto;
+}
+
+.cart-toggle-btn {
+  background-color: var(--bs-warning) !important;
+  border-radius: 0.3rem;
+}
+
+.toggle-cart {
+  display: none !important;
+}
+.cart-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+}
+.cart-item-box {
+  display: flex;
+  place-items: center;
+  padding: 2rem;
+  justify-content: space-around;
+  margin: 0.8rem;
+  width: 43rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.cart-item-box img {
+  width: 10rem;
+  height: 10rem;
+  outline: 1px solid gainsboro;
+}
+
+.cart-item-box div select {
+  width: 8.5rem;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: orange;
+}
+
+.cart-item-box h2 {
+  font-size: 2.2rem;
+}
+
+.cart-empty {
+  color: var(--black) !important;
+  text-transform: uppercase;
+}
+.cart-item-box h4 {
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+  color: var(--light-color);
+}
+
+.cart-item-box h3 {
+  font-size: 1.9rem;
+  margin-top: 0.8rem;
+  font-weight: bolder;
+  color: var(--green);
+}
+
+.cart-item-box button {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  color: rgba(255, 0, 0, 0.673);
+  background: none;
+}
+
+.total-cart-price h2 {
+  text-align: center;
+}
+.total-cart-price h2:last-of-type {
+  font-weight: bolder;
+  color: var(--green);
+  text-align: center;
+  margin-top: 1rem;
+}
+.cart-toggle-btn span {
+  font-size: 2.8rem;
+  padding: 0.5rem 1rem;
+}
+
+.freeShipping {
+  background-color: red;
+  color: white;
+  padding: 0rem 0.5rem;
+  border-radius: 0.5rem;
+  animation: flashFree 0.8s infinite;
+  transition: all 0.8s linear;
+}
+
+@keyframes flashFree {
+  50% {
+    background-color: var(--green);
+  }
+}
+
+.checkOutLogin {
+  background-color: #fff;
+  margin: auto;
+}
+
+.checkOutLoginBtn {
+  background-color: red !important;
+}
+
+.checkOutLoginBtn {
+  background-color: rgb(255, 166, 0) !important;
+  padding: 0.5rem 3rem !important;
+  font-size: 2.3rem !important;
+  color: white !important;
+  border-radius: 0.3rem !important;
+}
+.checkOutLoginBtn:hover {
+  background-color: green !important;
+}
+
+@media (max-width: 450px) {
+  .checkout-box {
+    width: 100%;
+  }
+
+  .cart-item-box {
+    width: 100%;
+  }
+  .cart-item-box img {
+    width: 10rem;
+  }
+}

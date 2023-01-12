@@ -1,0 +1,343 @@
+.confirm-order-section {
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+}
+.confirm-order-section .order-summary-section {
+  margin: auto;
+  max-width: 60%;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.confirm-order-section .order-summary-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.7rem;
+  margin-top: 1rem;
+  color: var(--black);
+}
+.confirm-order-section .order-summary-section .product-summary {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.confirm-order-section .order-summary-section table {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  background-color: var(--bs-white);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.confirm-order-section .order-summary-section .product-summary table thead {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.confirm-order-section .order-summary-section .product-summary table tbody {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: azure !important;
+}
+
+.confirm-order-section
+  .order-summary-section
+  .product-summary
+  table
+  tbody
+  .subtotal {
+  color: var(--green);
+}
+
+.confirm-order-section .order-summary-section .shipping-details-summary {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.confirm-order-section .order-summary-section .shipping-details-summary table {
+  overflow: auto !important;
+  margin-top: 2.3rem;
+}
+.confirm-order-section
+  .order-summary-section
+  .shipping-details-summary
+  table
+  th {
+  font-size: 1.6rem;
+  padding: 0rem 0.5rem;
+  color: var(--black);
+}
+
+.confirm-order-section
+  .order-summary-section
+  .shipping-details-summary
+  table
+  tbody {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: azure !important;
+}
+
+.confirm-order-section .order-summary-section .payment-summary {
+  background-color: #fff;
+  font-size: 2.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-order-section .order-summary-section .payment-summary div {
+  text-align: center;
+}
+
+.confirm-order-section .order-summary-section .payment-summary h6 {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+.confirm-order-section .order-summary-section .payment-summary h6:last-of-type {
+  color: green;
+  font-weight: bolder;
+}
+.confirm-order-section .order-summary-section .payment-summary h6 span {
+  margin-left: 0.5rem;
+}
+.free-shipping {
+  color: red;
+}
+.confirm-order-section .order-summary-section .payment-summary {
+  background-color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 0.5rem;
+}
+
+.confirm-order-section .order-summary-section .confirm-order-btn {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.confirm-order-section .order-summary-section .confirm-order-btn button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cOrder {
+  background-color: var(--bs-success) !important;
+}
+.cOrder:hover {
+  background-color: green !important;
+}
+
+.confirm-order-section
+  .order-summary-section
+  .confirm-order-btn
+  button:last-of-type {
+  background: var(--bs-danger);
+}
+
+.confirm-order-section
+  .order-summary-section
+  .confirm-order-btn
+  button:last-of-type:hover {
+  background: red;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+  .confirm-order-section .order-summary-section {
+    max-width: 100%;
+  }
+  .confirm-order-section .order-summary-section .confirm-order-btn {
+    width: 100%;
+  }
+  .confirm-order-section .order-summary-section .confirm-order-btn button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+  }
+}
+
+/* .confirm-order-section {
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+  background-color: black;
+}
+.confirm-order-section .order-summary-section {
+  width: 50rem;
+  margin: auto;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  background-color: aqua;
+}
+.confirm-order-section .order-summary-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.7rem;
+  margin-top: 1rem;
+  color: var(--black);
+}
+
+.confirm-order-section .order-summary-section .product-summary {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.confirm-order-section .order-summary-section table {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  background-color: var(--bs-white);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.confirm-order-section .order-summary-section .product-summary table thead {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.confirm-order-section .order-summary-section .product-summary table tbody {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.confirm-order-section
+  .order-summary-section
+  .product-summary
+  table
+  tbody
+  .subtotal {
+  color: var(--green);
+}
+
+.confirm-order-section .order-summary-section .shipping-details-summary {
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+.confirm-order-section .order-summary-section .shipping-details-summary table {
+  overflow: auto !important;
+  margin-top: 2.3rem;
+}
+.confirm-order-section
+  .order-summary-section
+  .shipping-details-summary
+  table
+  th {
+  font-size: 1.6rem;
+  padding: 0rem 0.5rem;
+  color: var(--black);
+}
+
+.confirm-order-section
+  .order-summary-section
+  .shipping-details-summary
+  table
+  tbody {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.confirm-order-section .order-summary-section .payment-summary {
+  background-color: #fff;
+  font-size: 2.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-order-section .order-summary-section .payment-summary div {
+  text-align: center;
+}
+
+.confirm-order-section .order-summary-section .payment-summary h6 {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+.confirm-order-section .order-summary-section .payment-summary h6:last-of-type {
+  color: green;
+  font-weight: bolder;
+}
+.confirm-order-section .order-summary-section .payment-summary h6 span {
+  margin-left: 0.5rem;
+}
+.free-shipping {
+  color: red;
+}
+.confirm-order-section .order-summary-section .payment-summary {
+  background-color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 0.5rem;
+}
+
+.confirm-order-section .order-summary-section .confirm-order-btn {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.confirm-order-section .order-summary-section .confirm-order-btn button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cOrder {
+  background-color: var(--bs-success) !important;
+}
+.cOrder:hover {
+  background-color: green !important;
+}
+
+.confirm-order-section
+  .order-summary-section
+  .confirm-order-btn
+  button:last-of-type {
+  background: var(--bs-danger);
+}
+
+.confirm-order-section
+  .order-summary-section
+  .confirm-order-btn
+  button:last-of-type:hover {
+  background: red;
+} */

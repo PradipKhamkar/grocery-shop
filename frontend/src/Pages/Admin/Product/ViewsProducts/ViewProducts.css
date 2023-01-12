@@ -1,0 +1,45 @@
+.products-table {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  border-radius: 0.5rem;
+  overflow: auto !important;
+  margin-top: 1rem;
+}
+.products-table table {
+  width: 100%;
+  text-align: center;
+  overflow: auto !important;
+  padding: 0.5rem;
+}
+.products-table table thead {
+  background-color: var(--bs-warning);
+  font-size: 1.9rem;
+  padding: 1rem;
+  color: var(--bs-white);
+}
+
+.products-table table th {
+  padding: 1rem;
+}
+
+.products-table table tbody {
+  font-size: 1.5rem;
+  background-color: var(--bs-gray-100);
+}
+
+.products-table table tbody td {
+  padding: 1rem;
+}
+
+.products-table table tbody td a {
+  color: var(--bs-success);
+}
+.admin-delete-products-icon {
+  color: var(--bs-danger);
+  cursor: pointer;
+}
+.products-table table tbody td img {
+  width: 9rem;
+  height: 9rem;
+}

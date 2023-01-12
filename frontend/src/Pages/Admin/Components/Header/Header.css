@@ -1,0 +1,24 @@
+.admin-header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  z-index: 99;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    top: 0rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 450px) {
+}

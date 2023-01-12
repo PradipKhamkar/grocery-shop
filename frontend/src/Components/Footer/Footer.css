@@ -1,0 +1,113 @@
+.footer {
+  background-color: #fff;
+}
+
+.footer .box-container {
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: var(--green);
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: var(--green);
+  padding: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.share {
+  display: flex;
+}
+
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 0.2rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.footer .box-container .box .whats-message {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: var(---black);
+}
+.footer .box-container .box .sendMsgBtn {
+  background-color: red;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-left: -3rem;
+}
+
+.footer .box-container .box .sendMsgBtn:hover {
+  background-color: var(--green);
+}
+.footer .box-container .box .payment-img {
+  margin-top: 2rem;
+  height: 6rem;
+  padding: 1.2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: 2px solid var(--light-color);
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+
+@media (max-width: 450px) {
+  .footer {
+    text-align: center;
+  }
+  .share {
+    display: flex;
+    justify-content: center;
+  }
+}

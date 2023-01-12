@@ -1,0 +1,115 @@
+.orders-container {
+  margin-top: 12rem;
+  height: 100%;
+}
+
+.orders-box {
+  padding: 3rem;
+  width: 100%;
+  margin: auto;
+}
+
+.orders-toggle-cart {
+  display: flex !important;
+}
+
+.orders-cart-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+}
+.orders-cart-item-box {
+  display: flex;
+  place-items: center;
+  padding: 2rem;
+  justify-content: space-around;
+  margin: 0.8rem;
+  width: 43rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.orders-cart-item-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.orders-cart-item-box img {
+  width: 10rem;
+  /* outline: 1px solid gainsboro; */
+}
+
+.orders-cart-item-box h2 {
+  font-size: 2rem;
+}
+.orders-cart-item-box h4 {
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  color: var(--light-color);
+}
+
+.orders-cart-item-box h3 {
+  font-size: 1.9rem;
+  font-weight: bolder;
+  color: var(--green);
+  text-align: right;
+}
+
+.orders-total-cart-price h2 {
+  text-align: left;
+}
+.orders-total-cart-price h2:last-of-type {
+  font-weight: bolder;
+  color: var(--green);
+}
+.not-place-order {
+  color: var(--black) !important;
+}
+.order-date {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: var(--black);
+}
+.get-order-link {
+  color: var(--black);
+}
+.shipped-order-count {
+  color: red !important;
+}
+.delivered-order-count {
+  color: green !important;
+}
+.order-processing-status {
+  color: brown !important;
+}
+.order-shipping-status {
+  color: red !important;
+}
+.order-delivery-status {
+  color: green !important;
+}
+
+.get-order-link:hover {
+  color: var(--bs-danger);
+}
+@media (max-width: 450px) {
+  .orders-box {
+    width: 100%;
+  }
+  .orders-cart-item-box {
+    width: 100%;
+  }
+  .orders-cart-item-box img {
+    width: 8rem;
+  }
+  .orders-cart-item-box h3 {
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+    font-weight: bolder;
+    color: var(--green);
+    text-align: right;
+  }
+}

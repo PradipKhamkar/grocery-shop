@@ -1,0 +1,16 @@
+.update-order-status {
+  width: 14rem;
+  background-color: var(--black);
+  text-align: center;
+  padding: 0.3rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.update-order-status-btn {
+  background-color: tomato;
+  padding: 0.3rem;
+  margin-left: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+}

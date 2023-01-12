@@ -1,0 +1,227 @@
+.login-container {
+  margin-bottom: 12rem;
+  height: 100%;
+}
+.regHeading {
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+}
+
+.login-container .box {
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.login-box {
+  width: 60rem;
+  background-color: white;
+  padding: 5rem;
+  text-align: center;
+  margin: auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.login-box form svg {
+  position: absolute;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  color: wheat;
+}
+
+.showPassword {
+  position: absolute;
+  margin-left: -4.5rem;
+}
+
+.box form input {
+  background: var(--black) !important;
+  margin-bottom: 2.2rem;
+  font-size: 2rem;
+  padding: 1.2rem;
+  width: 70%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+}
+
+.validError {
+  background-color: brown;
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  transition: all;
+}
+
+.validError span {
+  font-size: 1.7rem;
+  padding: inherit;
+  color: white;
+}
+.user-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.user-links a {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+.login-box button {
+  background-color: green;
+  padding: 0.5rem 3rem;
+  font-size: 2.3rem;
+  color: white;
+  border-radius: 0.3rem;
+  margin-top: 2.5rem;
+}
+.login-box button:hover {
+  background-color: red;
+}
+.RegisterSuccess {
+  margin-bottom: 2rem;
+}
+.RegisterSuccess .pop-card {
+  background-color: white;
+  width: 40rem;
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.loader {
+  display: block !important;
+}
+.loader-pop-cart {
+  padding: 5rem !important;
+  border-radius: 0.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.RegisterSuccess div h1 {
+  color: var(--black);
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.RegisterSuccess div button {
+  color: var(--black);
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: var(--green);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.RegisterSuccess div button:hover {
+  background-color: tomato;
+}
+
+.close-pop {
+  display: none;
+}
+
+#close-btn {
+  margin-left: 35rem;
+  margin-top: 1rem;
+  height: 2rem;
+  background-color: red !important;
+  padding: 0rem 0.5rem !important;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.successLoader {
+  background-color: none;
+  width: 6rem;
+  padding: 0.8rem 1.7rem;
+  margin: auto;
+  border: 1px solid green;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  animation: loader 7s infinite;
+  transition: all 2s;
+}
+
+@keyframes loader {
+  90% {
+    transform: rotate(360deg);
+    border: 1px solid orange;
+  }
+}
+
+.loader-text::before {
+  content: "🥦";
+  font-size: 2.8rem;
+  animation: spin 7s infinite;
+  transition: all 2s;
+}
+.forget-password-container {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+}
+@keyframes spin {
+  30% {
+    content: "🥕";
+  }
+  35% {
+    content: "🍊";
+  }
+  40% {
+    content: "🌶️";
+  }
+  45% {
+    content: "🍍";
+  }
+  50% {
+    content: "🍏";
+  }
+  55% {
+    content: "🍐";
+  }
+  60% {
+    content: "🍉";
+  }
+  65% {
+    content: "🍓";
+  }
+  70% {
+    content: "🍒";
+  }
+  75% {
+    content: "🍎";
+  }
+}
+
+@media (max-width: 450px) {
+  .login-container .box {
+    width: 100%;
+    margin: auto;
+  }
+  .login-box {
+    width: 98%;
+  }
+  .box form input {
+    width: 100%;
+  }
+  .user-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .validError {
+    width: 100%;
+  }
+  .RegisterSuccess div h1 {
+    color: var(--black);
+    font-size: 2.5rem;
+  }
+}

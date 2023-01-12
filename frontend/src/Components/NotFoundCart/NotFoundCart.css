@@ -1,0 +1,24 @@
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.not-found-cart-box {
+  background-color: white;
+  height: 8rem;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 0.5rem;
+}
+
+.not-found-cart-msg {
+  text-align: center;
+  color: var(--black);
+  font-size: 1.2rem;
+}
