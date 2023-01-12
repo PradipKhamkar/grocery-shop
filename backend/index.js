@@ -30,12 +30,7 @@ app.use(express.json());
 //Use Express File Upload
 app.use(expressFileUpload());
 
-//Config Cloudniary
-cloudinary.config({ 
-  cloud_name: 'dzkexyp4x', 
-  api_key: '277621367132598', 
-  api_secret: 'qWZksD_8nYXzMiywrPDLSRP9gS8' 
-});
+
 
 app.listen(process.env.PORT, "localHost", () => {
   console.log(`Server Running At http://localhost:${process.env.PORT}`);
