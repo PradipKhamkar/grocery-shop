@@ -185,7 +185,7 @@ const Home = () => {
                                   Navigate(`/products/${item.name}`);
                                 }}
                               >
-                                Add To Cart
+                               View Product
                               </button>
                             </div>
                           </SwiperSlide>
