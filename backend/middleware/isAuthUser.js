@@ -1,4 +1,3 @@
-const { models } = require("mongoose");
 const sendError = require("../utils/sendError");
 const jwt = require("jsonwebtoken");
 const userModel = require("../models/userModel");

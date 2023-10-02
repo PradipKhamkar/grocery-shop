@@ -86,7 +86,6 @@ const AddProduct = () => {
         productFormData.append("kilogramOption", kg);
       });
       productFormData.append("image", image);
-
       dispatch(AddProductsAction(productFormData));
     }
   };

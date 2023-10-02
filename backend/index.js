@@ -13,7 +13,6 @@ const cookieParser = require("cookie-parser");
 const connectDB = require("./Config/connection");
 const userRoutes = require("./routes/userRoute");
 const productRoute = require("./routes/productRoute");
-const pinCodeRoute = require("./routes/pinCodeRoute");
 const categoryRoute = require("./routes/categoryRoute");
 
 //Body Parser
@@ -24,7 +23,6 @@ app.use(cookieParser());
 
 //Database Connect
 connectDB();
-console.log(process.env.CLOUD_API_KEY);
 //JSON
 app.use(express.json());
 
@@ -38,12 +36,6 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET_KEY,
 });
 
-// cloudinary.config({
-//   cloud_name: process.env.CLOUD_NAME,
-//   api_key: process.env.CLOUD_API_KEY,
-//   api_secret: process.env.CLOUD_API_SECRET_KEY,
-// });
-
 app.listen(process.env.PORT, "localHost", () => {
   console.log(`Server Running At http://localhost:${process.env.PORT}`);
 });
@@ -51,7 +43,6 @@ app.listen(process.env.PORT, "localHost", () => {
 //Load Route
 app.use("/api/user", userRoutes);
 app.use("/api/product", productRoute);
-app.use("/api/pincode", pinCodeRoute);
 app.use("/api/category", categoryRoute);
 
 //Access Front End Static Files

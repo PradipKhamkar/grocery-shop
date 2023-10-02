@@ -10,7 +10,6 @@ export const myCartProductReducer = (state = { cartItems: [] }, action) => {
       const isItemInCart = state.cartItems.find((item) => {
         return item.id === action.payload.id;
       });
-
       if (isItemInCart) {
         state.cartItems.map((item) => {
           if (item.id === action.payload.id) {
