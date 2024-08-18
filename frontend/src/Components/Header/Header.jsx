@@ -16,6 +16,7 @@ import {
 } from "../../Redux/Actions/userAction";
 import { useEffect } from "react";
 import { removeCartItemAction } from "../../Redux/Actions/cartAction";
+import GithubButton from "../GithubButton/GithubButton";
 
 const Header = () => {
   const Navigate = useNavigate();
@@ -237,6 +238,7 @@ const Header = () => {
             </ul>
           )}
         </div>
+        <GithubButton />
       </header>
     </>
   );
