@@ -238,7 +238,6 @@ const Header = () => {
             </ul>
           )}
         </div>
-        jnjnjnjnj
         <GithubButton />
       </header>
     </>
