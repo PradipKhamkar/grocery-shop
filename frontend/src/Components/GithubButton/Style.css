@@ -1,0 +1,139 @@
+:root {
+  --lovelish: hsl(0, 0%, 18%);
+  --handshake: hsl(40, 100%, 66%);
+  --btn2: hsl(242, 43%, 65%);
+  --btn3: hsl(160, 86%, 63%);
+}
+
+/* .github-button > .main-box {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+} */
+
+/* .github-button > .button-box {
+  height: 500px;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: grid;
+} */
+
+/* Button 1 */
+
+.github-button {
+  position: absolute;
+  top: 90vh;
+  left: 85vw;
+}
+.github-button > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-radius: 2.5rem;
+  transition: 0.5s;
+  font-size: 2rem;
+  /* background-image: linear-gradient(
+    to right,
+    #6bd1a8,
+    #70d4a1,
+    #75d799,
+    #7ada91,
+    #7fdd8a,
+    #83e083,
+    #88e37c,
+    #8de675,
+    #92e96e,
+    #97ec67,
+    #9cf060,
+    #a1f359
+  ); */
+
+  background-image: linear-gradient(
+    to right,
+    #ff9800,
+    #ff9c2a,
+    #ffa033,
+    #ffa43d,
+    #ffa847,
+    #ffac51,
+    #ffb05b,
+    #ffb465,
+    #ffb86f,
+    #ffbc79,
+    #ffc083,
+    #ffc48d
+  );
+
+  color: white;
+  animation: blur 2s;
+  animation-iteration-count: infinite;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.github-button .button > img {
+  margin-left: 5px;
+  transition: 0.5s;
+  width: 5rem;
+  height: 5rem;
+}
+
+@keyframes blur {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--handshake);
+  }
+
+  50% {
+    box-shadow: 0 0 36px var(--handshake);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.title {
+  font-weight: bold;
+  /* margin-top: 1.6rem; */
+  /* margin-left: 10rem; */
+  transition: 0.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover .title {
+  transform: translateX(-10px);
+  animation: fade 0.5s;
+  opacity: 0%;
+}
+
+.button:hover img {
+  transform: translateX(-80px);
+}
+
+.description {
+  position: absolute;
+  /* margin-top: 1.6rem; */
+  font-weight: bold;
+  /* line-height: 2rem; */
+  /* font-size: 1rem; */
+  /* font-style: italic; */
+  transition: 0.5s;
+  opacity: 0%;
+  /* margin-left: 6rem; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover .description {
+  transform: translateX(15px);
+  opacity: 100%;
+}
