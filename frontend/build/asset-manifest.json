@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.945bfa7c.css",
+    "main.js": "/static/js/main.ffaa4670.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/banner-img.jpg": "/static/media/banner-img.b315e9c7e01edf69daf6.jpg",
+    "static/media/freshFruits.png": "/static/media/freshFruits.210d9bed508a3e609a97.png",
+    "static/media/feature-img-3.png": "/static/media/feature-img-3.5044349c6973aa6c94df.png",
+    "static/media/feature-img-1.png": "/static/media/feature-img-1.1ebf61d95222cee3cb16.png",
+    "static/media/likeemoji.png": "/static/media/likeemoji.202c7d12eb5aae59edd2.png",
+    "static/media/feature-img-2.png": "/static/media/feature-img-2.3da53d3bdc6a49b2b155.png",
+    "index.html": "/index.html",
+    "main.945bfa7c.css.map": "/static/css/main.945bfa7c.css.map",
+    "main.ffaa4670.js.map": "/static/js/main.ffaa4670.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.945bfa7c.css",
+    "static/js/main.ffaa4670.js"
+  ]
+}
