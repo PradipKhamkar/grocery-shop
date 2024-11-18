@@ -10,10 +10,7 @@ import { useRef } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  loadUserAction,
-  logOutUserAction,
-} from "../../Redux/Actions/userAction";
+import {logOutUserAction} from "../../Redux/Actions/userAction";
 import { useEffect } from "react";
 import { removeCartItemAction } from "../../Redux/Actions/cartAction";
 import GithubButton from "../GithubButton/GithubButton";
