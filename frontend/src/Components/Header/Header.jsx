@@ -110,7 +110,6 @@ const Header = () => {
           <Link to="/reviews/all">Reviews</Link>
           <Link to="/about">About Us</Link>
           <Link className="glow-on-hover" onClick={()=>{window.open('https://interview-ai-ui.vercel.app/',"_blank")}}>Try Interview AI</Link>
-
         </nav>
         <div className="navbar-icons">
           <div id="menu-btn" onClick={toggleNavbar}>
