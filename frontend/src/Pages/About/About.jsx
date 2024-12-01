@@ -5,9 +5,6 @@ import "./About.css";
 // import MetaData from "../MetaData";
 
 const About = () => {
-  const visitInstagram = () => {
-    window.location = "https://instagram.com/khamkar_pradip25";
-  };
   document.title = "About Us";
   return (
     <>
@@ -22,16 +19,28 @@ const About = () => {
           <div>
             <div>
               <img
-                style={{ width: "15rem", height: "15rem", margin: "2rem 0" }}
-                src="https://res.cloudinary.com/dmcm71zbt/image/upload/v1670126233/avatar/profile-pic_1_tozinc.png"
+                style={{
+                  width: "20rem",
+                  height: "20rem",
+                  margin: "2rem 0",
+                  borderRadius: "100%",
+                }}
+                src="https://media.licdn.com/dms/image/v2/D5603AQGbeRJ8DA3BBA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676695469014?e=1738800000&v=beta&t=rdwVTrAEqkgbsXZipX8ytsRWM7uIFDQLbR-8LtF0Z6Q"
                 alt="Founder"
               />
               <h1>Pradip Khamkar</h1>
-              <button onClick={visitInstagram}>Visit Instagram</button>
+              <button
+                onClick={() =>
+                  window.open("https://khamkarpradip.netlify.app/", "_blank")
+                }
+              >
+                Visit Website
+              </button>
               <br />
               <p>
-                This is a sample wesbite made by @Pradip Khamkar. Only with the
-                purpose to Learning MERN Stack
+                This is a sample wesbite made by @Pradip Khamkar.
+                <br />
+                Only with the purpose to Learning MERN Stack
               </p>
             </div>
           </div>

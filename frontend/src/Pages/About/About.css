@@ -6,7 +6,7 @@
 
 .about-section-box {
   background-color: white;
-  width: 50%;
+  width: 45rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -21,14 +21,11 @@
   font-size: 3rem;
   font-weight: 500;
   color: var(--black);
-  margin-bottom: 1rem;
 }
 
 .about-section-box > div > div > p {
   color: var(--light-color);
   font-size: 1.6rem;
-  margin: auto;
-  margin-top: 1.5rem;
 }
 
 .about-section-box > div > div > button {
@@ -42,6 +39,7 @@
   font-size: 1.7rem !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
+
 .about-section-box > div > div > button:hover {
   background-color: var(--bs-success);
   color: #fff;

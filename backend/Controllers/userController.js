@@ -136,15 +136,15 @@ const sendUserPasswordResetEmail = async (req, res) => {
         const transporter = nodemailer.createTransport({
           service: "gmail",
           auth: {
-            user: process.env.SMPT_MAIL,
-            pass: process.env.SMPT_PASSWORD,
+            user: process.env.SMTP_MAIL,
+            pass: process.env.SMTP_PASSWORD,
           },
         });
         const link = `${req.protocol}://${req.get("host")}/reset-password/${
           isUserExit._id
         }/${token}`;
         await transporter.sendMail({
-          from: process.env.SMPT_MAIL,
+          from: process.env.SMTP_MAIL,
           to: isUserExit.email,
           subject: "E-SHOP - Password Reset Link",
           html: `<h2>Hello ${isUserExit.firstName}</h2><br>
