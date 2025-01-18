@@ -237,7 +237,7 @@ const Header = () => {
             </ul>
           )}
         </div>
-        {/* <GithubButton /> */}
+        <GithubButton />
       </header>
     </>
   );

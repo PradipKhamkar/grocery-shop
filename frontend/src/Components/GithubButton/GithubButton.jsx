@@ -8,12 +8,15 @@ const GithubButton = () => {
       <button
         className="button"
         onClick={() =>
-          window.open("https://github.com/PradipKhamkar/grocery-shop", "_blank")
+          window.open(
+            "https://buymeacoffee.com/khamkarpradip/e/360466",
+            "_blank"
+          )
         }
       >
-        <p className="title">Github</p>
+        <p className="title">Source Code</p>
         <img src={require("../../Assets/likeemoji.png")} alt="like emoji" />
-        <p className="description">Give Star</p>
+        <p className="description">Download</p>
       </button>
     </div>
     // </div>

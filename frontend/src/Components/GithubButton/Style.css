@@ -27,14 +27,16 @@
   top: 90vh;
   left: 85vw;
 }
+
 .github-button > button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 200px;
   border-radius: 2.5rem;
   transition: 0.5s;
   font-size: 2rem;
+
   /* background-image: linear-gradient(
     to right,
     #6bd1a8,
@@ -117,7 +119,7 @@
 }
 
 .button:hover img {
-  transform: translateX(-80px);
+  transform: translateX(-120px);
 }
 
 .description {
