@@ -12,9 +12,9 @@ import { useState } from "react";
 
 const Footer = () => {
   const [message, setMessage] = useState();
-  const sendMessage = () => {
-    window.location = `https://wa.me/7350403908?text=${message}`;
-  };
+  // const sendMessage = () => {
+  //   window.location = `https://wa.me/7350403908?text=${message}`;
+  // };
   return (
     <>
       <footer>
@@ -29,7 +29,7 @@ const Footer = () => {
                 Grocery, Fruits And Dairy Products
               </p>
               <div className="share">
-                <Link>
+                {/* <Link>
                   <i
                     onClick={() => {
                       window.location = `https://wa.me/7350403908?text=Say Hello..!!`;
@@ -37,16 +37,16 @@ const Footer = () => {
                   >
                     {<IoLogoWhatsapp />}
                   </i>
-                </Link>
-                <a href="https://instagram.com/khamkar_pradip25">
+                </Link> */}
+                {/* <a href="https://instagram.com/khamkar_pradip25">
                   <i>{<SlSocialInstagram />}</i>
-                </a>
-                <Link to="#">
+                </a> */}
+                {/* <Link to="">
                   <i>{<TiSocialTwitter />}</i>
-                </Link>
-                <Link>
+                </Link> */}
+                <a href="https://in.linkedin.com/in/pradip-khamkar-9a5b88259?trk=people-guest_people_search-card">
                   <i>{<TiSocialLinkedin />}</i>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -119,7 +119,7 @@ const Footer = () => {
                 onChange={(e) => setMessage(e.target.value)}
               />
 
-              <button className="sendMsgBtn" onClick={sendMessage}>
+              <button className="sendMsgBtn">
                 Send
               </button>
               <img src={CreditCard} alt="Payment Img" className="payment-img" />
