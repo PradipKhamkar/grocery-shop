@@ -25,7 +25,7 @@ const About = () => {
                   margin: "2rem 0",
                   borderRadius: "100%",
                 }}
-                src="https://media.licdn.com/dms/image/v2/D5603AQGbeRJ8DA3BBA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676695469014?e=1738800000&v=beta&t=rdwVTrAEqkgbsXZipX8ytsRWM7uIFDQLbR-8LtF0Z6Q"
+                src="https://media.licdn.com/dms/image/v2/D5603AQGbeRJ8DA3BBA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1676695469014?e=1745452800&v=beta&t=MkkV5cX7nKh3ARf2-Ca9cSTIyKDFT4JlIrLKzBKOr58"
                 alt="Founder"
               />
               <h1>Pradip Khamkar</h1>
